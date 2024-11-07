@@ -4,7 +4,10 @@ This project is designed to analyze and predict the exchange rate between USD an
 
 ## User Story
 
-Meet Carlitos, a world traveler planning an exciting trip to Mexico in just two weeks. Carlitos wants to make the most of his budget while navigating foreign exchange rates that could impact his spending. He’s looking for insights into the USD to MXN exchange rate and hopes to understand whether any shifts in the rate are likely in the near future to help him plan financially for the trip. Our mission in this project is to analyze historical data and leverage predictive models to forecast the exchange rate trends, giving Carlitos the best possible advice on when to exchange his money for a favorable rate.
+Meet **John Doe**, a world traveler planning an exciting trip to Mexico in two weeks. John wants to make the most of his budget and is curious about the USD to MXN exchange rate and potential shifts in the near future.
+
+Our mission is to analyze historical exchange rate data, consider major economic events, and apply predictive models to forecast trends. With these insights, our team of seasoned analysts aims to help John make informed decisions on when to exchange his money for the best possible rate.
+
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -80,8 +83,10 @@ Open and run the `retrieve_fx_data.ipynb` notebook, which contains all code for 
 - Economic indicators such as the Fed Funds Rate, T-bill rates, and oil prices show varying degrees of correlation with the exchange rate.
 
 ### Visualizations
-- Scatter plots for each economic indicator over time.
-- A regression line overlaid on the USD to MXN exchange rate plot, showing the trend and linear relationship.
+- **Interactive Time Series Line Plots**: Allow exploration of each economic indicator over time, providing flexibility to zoom in on specific periods and identify key trends.
+- **Scatter Plot with Regression Line**: Display the USD to MXN exchange rate with an overlaid regression line, using Seaborn, to highlight overall trends and any linear relationship.
+- **Seaborn Line Plots with Major Events**: Annotated line plots showing significant economic events that impacted the USD to MXN exchange rate, offering historical context to visualize how major events influenced the rate.
+
 
 ### Statistical Summary
 - **Slope and Intercept:** Key components of the regression line \( y = mx + b \).
