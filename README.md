@@ -1,3 +1,4 @@
 # fx-rate-project
 
-Add more content here.
+# Notes
+# created fm-branch on November 7 to test branching
