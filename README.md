@@ -115,19 +115,35 @@ By following this structured methodology, we equipped Carlito with a data-driven
 
 ### Key Findings
 
-- **Historical Trend**: Our analysis using a linear regression model shows a steady upward trend in the USD to MXN exchange rate over the past 30 years. This suggests that the USD has generally appreciated against the MXN over time.
+- **Historical Trend**: Our analysis using a linear regression model reveals a steady upward trend in the USD to MXN exchange rate over the past 30 years, indicating a general appreciation of the USD against the MXN over time.
 
-- **Economic Shocks and Safe-Haven Status**: Certain periods, like the 2020 COVID-19 crisis, saw a dramatic rise in the USD as it acted as a "safe haven" currency. The data shows that during times of global economic uncertainty, the USD tends to strengthen against the MXN, with noticeable spikes in the exchange rate.
+- **Economic Shocks and Safe-Haven Status**: During periods of global economic uncertainty, such as the 2020 COVID-19 crisis, the USD strengthened significantly against the MXN as it acted as a "safe haven" currency. This led to noticeable spikes in the exchange rate during these times.
 
-- **Confidence Intervals**: By plotting a trailing average with upper and lower confidence intervals, we observed that when the exchange rate moves beyond these bounds, it indicates unusual volatility, often due to economic shocks.
+- **Confidence Intervals**: By plotting a trailing average with upper and lower confidence intervals, we observed that when the exchange rate exceeds these bounds, it signals unusual volatility, often triggered by economic shocks.
 
-- **Seasonal Patterns**: Prophet's time series forecasting model reveals seasonal trends in the exchange rate, with the USD typically depreciating in summer and appreciating in winter. This seasonality could be attributed to the higher volume of American tourists visiting Mexico in the summer.
+- **Seasonal Patterns**: The Prophet time series forecasting model reveals seasonal trends, with the USD typically depreciating in the summer and appreciating in the winter. This pattern may be influenced by the increased volume of American tourists visiting Mexico in the summer months.
 
-- **Correlation with Economic Indicators**: Key economic indicators, such as the US and Mexico's Real GDP, show a high correlation (around 0.90) with the exchange rate. Other indicators, like unemployment rates and inflation (CPI), also influence the rate, albeit to a lesser extent.
+### Correlation with Economic Indicators
 
-- **Interest Rate Parity (IRP)**: We explored the concept of Interest Rate Parity, which suggests that the currency of the country with a higher interest rate should depreciate over time. Our analysis found a high correlation (approximately 0.95) between the predicted IRP rate and the actual exchange rate, though the accuracy could be improved with better data quality for Mexico's long-term interest rates.
+The correlation analysis highlights significant relationships between the USD/MXN exchange rate and key economic indicators:
 
-- **90-Day Prediction**: Prophet’s 90-day forecast suggests that the USD to MXN rate may slightly decline, hinting at potential depreciation of the USD. This aligns with Carlito’s final decision to exchange his money now rather than waiting.
+- **Growth and Inflation**: The exchange rate is strongly correlated with **US and Mexico Real GDP** and **inflation rates** in both countries, suggesting that economic growth and inflation significantly influence the exchange rate.
+
+- **Interest Rates**: US interest rates, particularly the Federal Funds Rate and the 90-Day T-bill Rate, show a moderate inverse relationship with the exchange rate, while Mexico’s 90-Day T-bill Rate has a minimal impact.
+
+- **Unemployment**: Both US and Mexico unemployment rates have a moderate inverse relationship with the exchange rate, indicating that higher unemployment is generally associated with a lower USD/MXN rate.
+
+- **Oil Prices**: Oil prices exhibit a weak correlation with the exchange rate, suggesting limited direct influence on the USD/MXN rate.
+
+This analysis underscores the importance of economic growth, inflation, and interest rates in shaping the USD/MXN exchange rate.
+
+### Additional Insights
+
+- **Interest Rate Parity (IRP)**: Our exploration of Interest Rate Parity (IRP) suggests that the currency of the country with a higher interest rate tends to depreciate over time. We found a high correlation (approximately 0.95) between the predicted IRP rate and the actual exchange rate, though accuracy could improve with enhanced data on Mexico's long-term interest rates.
+
+- **90-Day Prediction**: Prophet’s 90-day forecast indicates a slight potential decline in the USD/MXN rate, aligning with Carlito’s decision to exchange his money now rather than waiting, anticipating a potential depreciation of the USD.
+
+
 
 ### Conclusion
 
@@ -144,7 +160,7 @@ In our analysis of the USD to MXN exchange rate and its relationship with econom
 
 ## 1. USD to MXN Exchange Rate Over Time
 
-![USD to MXN Exchange Rate Over Time](path/to/image)
+![USD to MXN Exchange Rate Over Time](images/USD to Mexican Peso Exchange Rate History.png)
 
 **Purpose**: This line chart shows the trend of the USD to MXN exchange rate over the years, helping us identify periods of appreciation or depreciation in the USD relative to the MXN.
 
