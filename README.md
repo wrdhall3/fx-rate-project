@@ -34,14 +34,20 @@ Through this project, we demonstrate how analytical and predictive tools can be 
 
 
 ## Data Sources
+
 The data is sourced from [FRED (Federal Reserve Economic Data)](https://fred.stlouisfed.org/), a reliable government data source that provides economic data, including:
-- **Exchange Rate (DEXMXUS)** - USD to MXN exchange rate
-- **US Federal Funds Rate (FEDFUNDS)** - Benchmark interest rate set by the US Federal Reserve
-- **US 90-Day T-bill Rate (TB3MS)** - Interest rate on 90-day treasury bills
-- **Mexico 90-Day T-bill Rate (INTGSTMXM193N)** - Interest rate on Mexican 90-day treasury bills
-- **US Real GDP (GDPC1)** - Inflation-adjusted Gross Domestic Product of the US
-- **Mexico Real GDP (NGDPRSAXDCMXQ)** - Inflation-adjusted Gross Domestic Product of Mexico
-- **Oil Prices (DCOILWTICO)** - West Texas Intermediate (WTI) crude oil prices
+
+- **Exchange Rate (DEXMXUS)** - USD to MXN exchange rate.
+- **US Federal Funds Rate (FEDFUNDS)** - The benchmark interest rate set by the US Federal Reserve.
+- **US 90-Day T-bill Rate (TB3MS)** - Interest rate on 90-day treasury bills.
+- **Mexico 90-Day T-bill Rate (INTGSTMXM193N)** - Interest rate on Mexican 90-day treasury bills.
+- **US Real GDP (GDPC1)** - Gross Domestic Product of the US, adjusted for inflation.
+- **Mexico Real GDP (NGDPRSAXDCMXQ)** - Gross Domestic Product of Mexico, adjusted for inflation.
+- **US Inflation Rate (CPIAUCSL)** - Consumer Price Index for All Urban Consumers in the US.
+- **Mexico Inflation Rate (MEXCPIALLMINMEI)** - Consumer Price Index for Mexico.
+- **US Unemployment Rate (UNRATE)** - The unemployment rate in the United States.
+- **Mexico Unemployment Rate (LRUN64TTMXA156N)** - The unemployment rate in Mexico.
+- **Oil Prices (DCOILWTICO)** - West Texas Intermediate (WTI) crude oil prices in dollars per barrel.
 
 ## Installation
 
