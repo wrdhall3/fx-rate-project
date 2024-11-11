@@ -125,17 +125,20 @@ By following this structured methodology, we equipped Carlito with a data-driven
 
 ### Correlation with Economic Indicators
 
-The correlation analysis highlights significant relationships between the USD/MXN exchange rate and key economic indicators:
+### Correlation with Economic Indicators
 
-- **Growth and Inflation**: The exchange rate is strongly correlated with **US and Mexico Real GDP** and **inflation rates** in both countries, suggesting that economic growth and inflation significantly influence the exchange rate.
+The correlation analysis reveals significant associations between the USD/MXN exchange rate and various economic indicators:
 
-- **Interest Rates**: US interest rates, particularly the Federal Funds Rate and the 90-Day T-bill Rate, show a moderate inverse relationship with the exchange rate, while Mexico’s 90-Day T-bill Rate has a minimal impact.
+- **Growth and Inflation**: The exchange rate exhibits strong positive correlations with both **US and Mexico Real GDP** (correlation coefficients of 0.90 and 0.87, respectively) and inflation rates (**US CPI** at 0.83 and **MX CPI** at 0.89). These strong correlations suggest that economic growth and inflation rates in both countries are positively associated with the USD/MXN exchange rate.
 
-- **Unemployment**: Both US and Mexico unemployment rates have a moderate inverse relationship with the exchange rate, indicating that higher unemployment is generally associated with a lower USD/MXN rate.
+- **Interest Rates**: **US interest rates** (Federal Funds Rate and 90-Day T-bill Rate) are highly correlated with each other (0.99) and show moderate negative correlations with the exchange rate (-0.27 and -0.21, respectively), indicating an inverse relationship where higher US interest rates tend to be associated with a lower USD/MXN rate. In contrast, **Mexico’s 90-Day T-bill Rate** shows a weak positive correlation with the exchange rate (0.04), suggesting minimal influence.
 
-- **Oil Prices**: Oil prices exhibit a weak correlation with the exchange rate, suggesting limited direct influence on the USD/MXN rate.
+- **Unemployment**: Both **US and Mexico unemployment rates** display moderate negative correlations with the exchange rate (-0.46), indicating that increases in unemployment rates tend to coincide with a depreciation of the USD relative to the MXN.
 
-This analysis underscores the importance of economic growth, inflation, and interest rates in shaping the USD/MXN exchange rate.
+- **Oil Prices**: **Oil prices** have a weak negative correlation with the exchange rate (-0.29), suggesting that fluctuations in oil prices have limited direct association with changes in the USD/MXN exchange rate.
+
+This analysis highlights that economic growth, inflation, and US interest rates have the most substantial associations with the USD/MXN exchange rate, while unemployment and oil prices show more moderate or weak correlations.
+
 
 ### Additional Insights
 
