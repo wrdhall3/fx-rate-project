@@ -239,11 +239,10 @@ In our linear regression analysis, the **slope** and **intercept** are key compo
   
 - **Intercept (-973.3058)**: This is the theoretical exchange rate value when time is zero. Although time cannot realistically be zero in this context, the intercept provides a starting point for the regression line.
 
-The resulting equation from this model is:
+The resulting equation from this model, where *Time* is represented as an ordinal date, is:
 
-\[
-\text{Exchange Rate} = 0.00134 \times \text{Time} - 973.3058
-\]
+**Exchange Rate = 0.00134 × Time (Ordinal Date) - 973.3058**
+
 
 ### Model Metrics
 - **R-squared (0.883)**: This high value indicates that approximately 88.3% of the variance in the exchange rate can be explained by the progression of time in this model. A higher R-squared value suggests that the model is a good fit for the data.
