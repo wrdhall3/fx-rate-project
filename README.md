@@ -233,22 +233,31 @@ Together, these visualizations give us a comprehensive view of the factors affec
 
 ### Statistical Summary
 
-In our linear regression analysis, the **slope** and **intercept** form the basis of the regression line equation \( y = mx + b \), where:
+In our linear regression analysis, the **slope** and **intercept** are key components of the regression line equation \( y = mx + b \), where:
 
-- **Slope (0.00134)** represents the change in the USD to MXN exchange rate for each additional unit in the independent variable (in this case, time). This positive slope suggests a slight upward trend in the exchange rate over time.
-- **Intercept (-4.2911)** is the value of the exchange rate when the independent variable (time) is zero. While it provides a starting point for the regression line, it is primarily a theoretical reference as time cannot realistically be zero.
+- **Slope (0.00134)**: This value represents the change in the USD to MXN exchange rate for each additional unit of time. The positive slope suggests a slight upward trend in the exchange rate over time, indicating that, on average, the USD strengthens against the MXN as time progresses.
+  
+- **Intercept (-973.3058)**: This is the theoretical exchange rate value when time is zero. Although time cannot realistically be zero in this context, the intercept provides a starting point for the regression line.
 
-The **R-squared value (0.883)** indicates a high goodness of fit, meaning that approximately 88.3% of the variance in the exchange rate can be explained by time in this model. A higher R-squared suggests that the model fits the data well.
+The resulting equation from this model is:
 
-The **p-value (0.0)** shows that the relationship between time and exchange rate is statistically significant, providing strong evidence against the null hypothesis (that there is no relationship). This low p-value confirms the reliability of the slope.
+\[
+\text{Exchange Rate} = 0.00134 \times \text{Time} - 973.3058
+\]
 
-The **standard error (5.56e-06)** reflects the precision of the slope estimate. A smaller standard error indicates a more precise estimate of the slope, which adds confidence to the results.
+### Model Metrics
+- **R-squared (0.883)**: This high value indicates that approximately 88.3% of the variance in the exchange rate can be explained by the progression of time in this model. A higher R-squared value suggests that the model is a good fit for the data.
+  
+- **P-value (0.0)**: This value demonstrates that the relationship between time and the exchange rate is statistically significant. A low p-value provides strong evidence against the null hypothesis (that there is no relationship), confirming the reliability of the slope.
+  
+- **Standard Error (5.56e-06)**: This reflects the precision of the slope estimate. A smaller standard error indicates a more precise slope estimate, enhancing confidence in the results.
 
-Using this regression line equation, we can estimate the future exchange rate. For example, the **predicted exchange rate in 90 days** is approximately **20.7449**, calculated as:
+### Example Prediction
+Using this regression line equation, we can estimate the future exchange rate. For example, the predicted exchange rate in 90 days is approximately **20.7449**, calculated as:
 
 ```python
 predicted_y = slope * x_90_days_later + intercept
-
+```
 
 
 ## Future Opportunities
