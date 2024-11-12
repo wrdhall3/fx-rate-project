@@ -163,11 +163,12 @@ In our analysis of the USD to MXN exchange rate and its relationship with econom
 
 ## 1. USD to MXN Exchange Rate Over Time
 
-![USD to MXN Exchange Rate Over Time](images/USD to Mexican Peso Exchange Rate History.png)
+![USD to MXN Exchange Rate Over Time](images/USD_to_Mexican_Peso_Exchange_Rate_History.png)
 
-**Purpose**: This line chart shows the trend of the USD to MXN exchange rate over the years, helping us identify periods of appreciation or depreciation in the USD relative to the MXN.
+**Purpose**: This line chart displays the historical trend of the USD to MXN exchange rate, highlighting periods of appreciation and depreciation of the USD relative to the MXN.
 
-**Observations**: Notable increases or decreases in the exchange rate often correspond with major global or economic events. Identifying these events helps us understand the forces behind currency value changes.
+**Observations**: Significant fluctuations in the exchange rate often align with major global or economic events, such as financial crises or shifts in monetary policy. Recognizing these events provides insight into the factors driving currency value changes over time.
+
 
 ---
 
