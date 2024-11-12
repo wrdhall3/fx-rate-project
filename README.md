@@ -11,12 +11,18 @@ Our mission is to analyze historical exchange rate data, consider major economic
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Methodology](#methodology)
 - [Results](#results)
-- [Future Work](#future-work)
-- [LICENSE](LICENSE) 
+  - [Key Findings](#key-findings)
+  - [Correlation with Economic Indicators](#correlation-with-economic-indicators)
+  - [Additional Insights](#additional-insights)
+  - [Conclusion](#conclusion)
+- [Visualizations](#visualizations)
+- [Statistical Summary](#statistical-summary)
+- [Future Opportunities](#future-opportunities)
+- [License](#license)
+
 
 ## Project Overview
 
