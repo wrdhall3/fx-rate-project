@@ -168,7 +168,7 @@ In our analysis of the USD to MXN exchange rate and its relationship with econom
 
 ## 1. USD to MXN Exchange Rate Over Time
 
-![USD to MXN Exchange Rate Over Time](images/USD to Mexican Peso Exchange Rate History.png)
+![USD to MXN Exchange Rate Over Time](images/USD_to_Mexican_Peso_Exchange_Rate_History.png)
 
 **Purpose**: This line chart displays the historical trend of the USD to MXN exchange rate, highlighting periods of appreciation and depreciation of the USD relative to the MXN.
 
