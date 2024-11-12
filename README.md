@@ -142,7 +142,7 @@ This analysis highlights that economic growth, inflation, and US interest rates 
 
 ### Additional Insights
 
-- **Interest Rate Parity (IRP)**: Our exploration of Interest Rate Parity (IRP) suggests that the currency of the country with a higher interest rate tends to depreciate over time. We found a high correlation (approximately 0.95) between the predicted IRP rate and the actual exchange rate, though accuracy could improve with enhanced data on Mexico's long-term interest rates.
+- **Interest Rate Parity (IRP)**: Our exploration of Interest Rate Parity (IRP) suggests that the currency of the country with a higher interest rate tends to depreciate over time. We found a high correlation (approximately 0.98) between the predicted IRP rate and the actual exchange rate, though accuracy could improve with enhanced data on Mexico's long-term interest rates.
 
 - **90-Day Prediction**: Prophet’s 90-day forecast indicates a slight potential decline in the USD/MXN rate, aligning with Carlito’s decision to exchange his money now rather than waiting, anticipating a potential depreciation of the USD.
 
