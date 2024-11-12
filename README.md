@@ -170,92 +170,56 @@ In our analysis of the USD to MXN exchange rate and its relationship with econom
 
 ![USD to MXN Exchange Rate Over Time](images/USD_to_Mexican_Peso_Exchange_Rate_History.png)
 
-**Purpose**: This line chart displays the historical trend of the USD to MXN exchange rate, highlighting periods of appreciation and depreciation of the USD relative to the MXN.
-
-**Observations**: Significant fluctuations in the exchange rate often align with major global or economic events, such as financial crises or shifts in monetary policy. Recognizing these events provides insight into the factors driving currency value changes over time.
-
-
 ---
 
 ## 2. Linear Regression Line on Exchange Rate
 
-![Linear Regression Line](path/to/image)
-
-**Purpose**: This chart features a linear regression line overlaid on the exchange rate data points, indicating the overall trend direction over time.
-
-**Observations**: The regression line shows a general trend in the exchange rate. Deviations from this line can signal periods of volatility or unusual economic behavior.
+![Linear Regression Line](images/USD_to_MXN_Linear_Regression_Line.png)
 
 ---
 
 ## 3. Moving Averages with ±2 Standard Deviations
 
-![Moving Averages with ±2 Standard Deviations](path/to/image)
-
-**Purpose**: This chart displays a 3-year moving average along with upper and lower bounds set at ±2 standard deviations. This range shows typical fluctuations around the average rate.
-
-**Observations**: The exchange rate generally stays within these bands, but periods where it crosses the bounds indicate high volatility. These instances often align with significant economic events.
+![Moving Averages with ±2 Standard Deviations](images/USD_to_MXN_Moving_Averages_Std_Dev.png)
 
 ---
 
 ## 4. Correlation Matrix Heatmap
 
-![Correlation Matrix Heatmap](path/to/image)
-
-**Purpose**: The heatmap shows the correlation between the exchange rate and various economic indicators such as GDP, inflation, and interest rates.
-
-**Observations**: Strong correlations, particularly with GDP and CPI (inflation), suggest that these factors play a significant role in influencing the exchange rate. Understanding these relationships can improve predictive models.
+![Correlation Matrix Heatmap](images/USD_to_MXN_Correlation_Matrix_Heatmap.png)
 
 ---
 
 ## 5. Interest Rate Parity (IRP) Comparison
 
-![IRP Comparison](path/to/image)
-
-**Purpose**: This chart compares the actual exchange rate with the forward rate calculated using Interest Rate Parity (IRP). This comparison helps evaluate IRP’s effectiveness in forecasting currency movements.
-
-**Observations**: Periods where the actual exchange rate diverges from the IRP prediction can reveal times when other economic factors outweigh interest rate differences between the U.S. and Mexico.
+![IRP Comparison](images/USD_to_MXN_IRP_Comparison.png)
 
 ---
 
 ## 6. Prophet Forecast from 2014 to Present
 
-![Prophet Forecast from 2014](path/to/image)
-
-**Purpose**: Using Prophet’s forecasting model, this chart shows the projected exchange rate trend from 2014 onward, with a confidence interval.
-
-**Observations**: The model captures the general trend, but some deviations suggest occasional volatility that may be difficult to forecast accurately. This provides a solid basis for long-term predictions.
+![Prophet Forecast from 2014](images/USD_to_MXN_Prophet_Forecast_2014_Present.png)
 
 ---
 
 ## 7. Prophet Forecasts for Different Time Windows
 
-- **7-Year Forecast from 2018**
-- **3-Year Forecast from 2022**
-- **1-Year Forecast from 2024**
-
-**Purpose**: These charts offer Prophet’s forecasts based on different historical data windows. Each timeframe helps us test the model’s reliability over various periods.
-
-**Observations**: Shorter timeframes may offer more accurate recent predictions, while longer timeframes can capture more stable, long-term trends.
+- **7-Year Forecast from 2018** ![7-Year Forecast](images/USD_to_MXN_Prophet_Forecast_7_Year.png)
+- **3-Year Forecast from 2022** ![3-Year Forecast](images/USD_to_MXN_Prophet_Forecast_3_Year.png)
+- **1-Year Forecast from 2024** ![1-Year Forecast](images/USD_to_MXN_Prophet_Forecast_1_Year.png)
 
 ---
 
 ## 8. Best Case, Worst Case, and Most Likely Exchange Rate Scenarios
 
-![Best, Worst, Most Likely Scenarios](path/to/image)
-
-**Purpose**: This visualization outlines three possible scenarios for the exchange rate over the next 90 days: best case, worst case, and most likely.
-
-**Observations**: The range between best and worst cases highlights uncertainty. A wider range suggests potential volatility, which could be critical for planning financial decisions.
+![Best, Worst, Most Likely Scenarios](images/USD_to_MXN_Best_Worst_Most_Likely_Scenarios.png)
 
 ---
 
 ## 9. Prophet Forecast Components
 
-![Prophet Forecast Components](path/to/image)
+![Prophet Forecast Components](images/USD_to_MXN_Prophet_Forecast_Components.png)
 
-**Purpose**: Prophet’s components plot breaks down the forecast into trend, weekly, and yearly seasonal effects. This helps us understand the factors that influence the forecasted exchange rate.
-
-**Observations**: Recognizable seasonal patterns and an overall trend can provide insights into when the exchange rate is likely to experience predictable shifts.
 
 ---
 
