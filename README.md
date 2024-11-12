@@ -123,7 +123,6 @@ By following this structured methodology, we equipped Carlito with a data-driven
 
 - **Seasonal Patterns**: The Prophet time series forecasting model reveals seasonal trends, with the USD typically depreciating in the summer and appreciating in the winter. This pattern may be influenced by the increased volume of American tourists visiting Mexico in the summer months.
 
-### Correlation with Economic Indicators
 
 ### Correlation with Economic Indicators
 
