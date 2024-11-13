@@ -144,88 +144,6 @@ The correlation analysis reveals significant associations between the USD/MXN ex
 
 This analysis highlights that economic growth, inflation, and US interest rates have the most substantial associations with the USD/MXN exchange rate, while unemployment and oil prices show more moderate or weak correlations.
 
-
-### Additional Insights
-
-- **Interest Rate Parity (IRP)**: Our exploration of Interest Rate Parity (IRP) suggests that the currency of the country with a higher interest rate tends to depreciate over time. We found a high correlation (approximately 0.98) between the predicted IRP rate and the actual exchange rate, though accuracy could improve with enhanced data on Mexico's long-term interest rates.
-
-- **90-Day Prediction**: Prophet’s 90-day forecast indicates a slight potential decline in the USD/MXN rate, aligning with Carlito’s decision to exchange his money now rather than waiting, anticipating a potential depreciation of the USD.
-
-
-
-### Conclusion
-
-Based on the historical analysis, seasonal patterns, correlation with economic indicators, and the Prophet model's forecast, Carlito decided to exchange his USD for MXN at the current rate. The data suggests that the USD may depreciate in the next 90 days, making it favorable for Carlito to act now.
-
-With this comprehensive approach, Carlito now feels confident in making informed foreign exchange decisions, whether for his upcoming trip to Oaxaca or future travels. He could also consider building a mobile app to leverage real-time exchange rate insights, empowering travelers with timely data for currency decisions.
-
-
-# Visualizations
-
-In our analysis of the USD to MXN exchange rate and its relationship with economic indicators, we’ve created a series of visualizations to help understand key patterns and trends. Each visualization plays an essential role in illustrating the insights derived from our data. Below, we outline each chart's purpose and highlight important observations.
-
----
-
-## 1. USD to MXN Exchange Rate Over Time
-
-![USD to MXN Exchange Rate Over Time](images/USD_to_Mexican_Peso_Exchange_Rate_History.png)
-
----
-
-## 2. Linear Regression Line on Exchange Rate
-
-![Linear Regression Line](images/USD_to_MXN_Linear_Regression_Line.png)
-
----
-
-## 3. Moving Averages with ±2 Standard Deviations
-
-![Moving Averages with ±2 Standard Deviations](images/USD_to_MXN_Moving_Averages_Std_Dev.png)
-
----
-
-## 4. Correlation Matrix Heatmap
-
-![Correlation Matrix Heatmap](images/USD_to_MXN_Correlation_Matrix_Heatmap.png)
-
----
-
-## 5. Interest Rate Parity (IRP) Comparison
-
-![IRP Comparison](images/USD_to_MXN_IRP_Comparison.png)
-
----
-
-## 6. Prophet Forecast from 2014 to Present
-
-![Prophet Forecast from 2014](images/USD_to_MXN_Prophet_Forecast_2014_Present.png)
-
----
-
-## 7. Prophet Forecasts for Different Time Windows
-
-- **7-Year Forecast from 2018** ![7-Year Forecast](images/USD_to_MXN_Prophet_Forecast_7_Year.png)
-- **3-Year Forecast from 2022** ![3-Year Forecast](images/USD_to_MXN_Prophet_Forecast_3_Year.png)
-- **1-Year Forecast from 2024** ![1-Year Forecast](images/USD_to_MXN_Prophet_Forecast_1_Year.png)
-
----
-
-## 8. Best Case, Worst Case, and Most Likely Exchange Rate Scenarios
-
-![Best, Worst, Most Likely Scenarios](images/USD_to_MXN_Best_Worst_Most_Likely_Scenarios.png)
-
----
-
-## 9. Prophet Forecast Components
-
-![Prophet Forecast Components](images/USD_to_MXN_Prophet_Forecast_Components.png)
-
-
----
-
-Together, these visualizations give us a comprehensive view of the factors affecting the USD to MXN exchange rate. By observing trends, seasonal patterns, and the impact of economic indicators, we gain valuable insights into currency movements and the overall economic relationship between the U.S. and Mexico.
-
-
 ### Statistical Summary
 
 In our linear regression analysis, the **slope** and **intercept** are key components of the regression line equation \( y = mx + b \), where:
@@ -252,6 +170,167 @@ Using this regression line equation, we can estimate the future exchange rate. F
 ```python
 predicted_y = slope * x_90_days_later + intercept
 ```
+
+
+### Additional Insights and Current Recommendations
+
+- **Interest Rate Parity (IRP) Observations**: The IRP model analysis indicates that currencies of countries with higher interest rates, like the MXN, tend to depreciate relative to those with lower rates, such as the USD. Our IRP predictions align closely with actual short-term exchange rates, showing a high correlation of approximately 0.98. This suggests that IRP is effective for short-term predictions but could benefit from higher-quality data on Mexico's long-term interest rates for more robust results.
+
+- **90-Day Forecast and Seasonal Trends**: Prophet’s 90-day forecast suggests a potential decrease in the USD/MXN exchange rate. Combined with seasonal insights indicating that winter months generally favor a stronger USD, this suggests that Carlito would benefit from exchanging his USD for MXN now, as waiting could expose him to a less favorable rate. 
+
+### Current Recommendation
+
+Based on the initial analysis of historical patterns, seasonal trends, correlation with economic indicators, and model forecasts, Carlito should consider exchanging his USD for MXN at the current rate. This action aligns with short-term indicators of potential USD depreciation and seasonal patterns that typically strengthen the USD in winter months. By acting now, Carlito can potentially avoid unfavorable shifts in the exchange rate over the next 90 days. 
+
+These findings provide a solid foundation as the project continues, with future analysis focused on refining predictive models, testing additional economic indicators, and exploring real-time data integration. This comprehensive approach will ultimately empower Carlito to make well-informed foreign exchange decisions, not only for immediate needs like his trip to Oaxaca but also for future currency exchanges.
+
+
+## Visualizations
+
+In our analysis of the USD to MXN exchange rate and its relationship with economic indicators, we’ve created a series of visualizations to help understand key patterns and trends. Each visualization plays an essential role in illustrating the insights derived from our data. Below, we outline each chart's purpose and highlight important observations.
+
+---
+
+## 1. USD to MXN Exchange Rate Over Time
+
+![USD to MXN Exchange Rate Over Time](images/USD_to_Mexican_Peso_Exchange_Rate_History.png)
+
+**Purpose:** This line chart displays the historical trend of the USD to MXN exchange rate, highlighting periods of appreciation and depreciation of the USD relative to the MXN.
+
+**Observations:** Initial observations of the 30-year data reveal periods of high volatility in the USD to MXN exchange rate. Significant fluctuations appear at various points, suggesting potential influences from global or economic events. We also observe a general upward trend in the USD to MXN rate over time, with the exchange rate moving from approximately 5 pesos per dollar to around 20 pesos per dollar and reaching as high as 25 pesos in 2020. This peak in 2020 especially catches our interest, prompting us to investigate that time period further to understand the factors driving such volatility.
+
+
+---
+
+## 2. Linear Regression Line on Exchange Rate
+
+![Linear Regression Line](images/USD_to_MXN_Linear_Regression_Line.png)
+
+**Purpose:** This chart features a linear regression line overlaid on the exchange rate data points, indicating the overall trend direction over time.
+
+**Observations:** We applied a linear regression model to predict the USD to MXN exchange rate. However, as we can see, this model may not be entirely effective for long-term forecasting, as it suggests a continuous upward trend in the distant future. Such a trend would imply an indefinite appreciation of the USD against the MXN, which may not reflect realistic economic conditions over extended periods. In the short term, though, this model could help anticipate a gradual increase in the exchange rate, albeit with some skepticism due to the model’s limitations in capturing potential reversals or volatility from external economic factors.
+
+---
+
+## 3. Moving Averages with ±2 Standard Deviations
+
+![Moving Averages with ±2 Standard Deviations](images/USD_to_MXN_Moving_Averages_Std_Dev.png)
+
+**Purpose:** This chart displays a 3-year moving average along with upper and lower bounds set at ±2 standard deviations. This range shows typical fluctuations around the average rate.
+
+**Observations:** As economic advisors, we identified areas of high volatility in the exchange rate and selected these periods for further analysis. We added timestamps based on major economic events, such as the Asian Financial Crisis, the Global Recession of 2008, and the COVID-19 pandemic in 2020. Large spikes in the USD to MXN exchange rate during these times suggest that the US dollar acts as a "safe haven" during global economic shocks. This pattern highlights how investors often turn to the USD during periods of uncertainty, leading to temporary but significant increases in the exchange rate.
+
+
+---
+
+## 4. Correlation Matrix Heatmap
+
+![Correlation Matrix Heatmap](images/USD_to_MXN_Correlation_Matrix_Heatmap.png)
+
+**Purpose:** The heatmap shows the correlation between the exchange rate and various economic indicators, such as GDP, inflation, and interest rates.
+
+**Observations**
+
+The correlation matrix provides a comprehensive view of the relationships between the USD to MXN exchange rate and various economic indicators. As economic advisors, we interpret these correlations to identify which factors have the most substantial impact on the exchange rate and which are less influential. Here are the key insights from the heatmap:
+
+1. **High Positive Correlations with GDP and Inflation:**
+   - **US Real GDP** (0.90) and **Mexico Real GDP** (0.87) show a strong positive correlation with the exchange rate, indicating that economic growth in both countries has a significant impact on currency value. When the GDP of either country rises, the exchange rate tends to increase, reflecting stronger economic conditions and potentially increased trade and investment flows.
+   - **US CPI (Inflation)** (0.83) and **Mexico CPI (Inflation)** (0.89) are also highly correlated with the exchange rate, highlighting the role of inflation in shaping currency values. High inflation in either country can erode purchasing power, affecting the demand for each currency and thereby influencing the exchange rate.
+
+2. **Interest Rates and Exchange Rate:**
+   - The **US Federal Funds Rate** (-0.27) and **US 90-Day T-bill Rate** (-0.21) exhibit moderate negative correlations with the exchange rate. This suggests that higher US interest rates are associated with a slightly lower USD to MXN exchange rate, possibly because higher US interest rates can attract foreign investment, strengthening the USD relative to the MXN.
+   - **Mexico’s 90-Day T-bill Rate** has a very weak correlation with the exchange rate (0.04), indicating that short-term interest rates in Mexico have minimal direct impact on the USD to MXN exchange rate. This weak relationship could be due to other dominant factors, such as Mexico’s economic performance relative to the US or global investor sentiment favoring the USD as a safe haven.
+
+3. **Unemployment Rates and Exchange Rate:**
+   - Both **US Unemployment** (-0.46) and **Mexico Unemployment** (-0.46) have moderate negative correlations with the exchange rate. This suggests that higher unemployment rates in either country are generally associated with a stronger USD relative to the MXN. High unemployment can indicate economic weakness, which might reduce the attractiveness of that country's currency, favoring the USD as a more stable option.
+
+4. **Oil Prices:**
+   - **Oil prices** exhibit a weak negative correlation with the USD to MXN exchange rate (-0.29). While Mexico is a major oil exporter, fluctuations in oil prices appear to have a limited direct impact on the exchange rate in this dataset. This weak relationship may indicate that other economic factors, such as inflation and GDP, play more critical roles in determining the exchange rate than oil prices alone.
+
+5. **Interrelationships Among US and Mexico Economic Indicators:**
+   - The high correlation between **US Real GDP** and **Mexico Real GDP** (0.94) reflects the close economic ties between the two countries, particularly through trade and investment. This interdependence means that economic performance in one country often influences the other.
+   - **US and Mexico CPI** also have a high correlation (0.92), suggesting that inflationary pressures in one country tend to mirror those in the other, likely due to their interconnected economies and shared exposure to global economic conditions.
+
+### Summary:
+In summary, **GDP and inflation** are the primary drivers of the USD to MXN exchange rate, with strong positive correlations indicating their significant impact on currency values. **Interest rates** and **unemployment rates** show moderate correlations, suggesting they also influence the exchange rate but to a lesser extent. **Oil prices** have a minor role, indicating limited direct impact on the exchange rate despite Mexico's role as an oil-exporting nation. This analysis allows us to focus on the most influential variables—GDP and inflation—while being mindful of other factors that can indirectly affect the exchange rate, especially during periods of economic volatility.
+
+
+---
+
+## 5. Interest Rate Parity (IRP) Comparison
+
+![IRP Comparison](images/USD_to_MXN_IRP_Comparison.png)
+
+**Purpose:** This chart compares the actual exchange rate with the forward rate calculated using Interest Rate Parity (IRP). This comparison helps evaluate IRP’s effectiveness in forecasting currency movements.
+
+**Observations:** The graph displays the USD to MXN exchange rate (in blue) alongside the 90-day forward rate shifted (in red), calculated using the Interest Rate Parity (IRP) approach. The high correlation between these two lines, with a correlation coefficient of approximately 0.98, suggests that IRP is quite effective in capturing short-term movements in the exchange rate. The close alignment over the years highlights the influence of interest rate differentials on the exchange rate in the short term, indicating that investors' expectations based on interest rate parity align with actual market behavior.
+
+However, while the IRP model works well for short-term predictions, certain limitations become apparent over longer periods. For example, we observe deviations during periods of significant economic turbulence, such as the 2008 global financial crisis and the COVID-19 pandemic in 2020. During these times, the exchange rate and forward rate diverge, illustrating that the IRP model does not fully capture the impact of global economic shocks or market sentiment, which can override interest rate effects in the short term.
+
+Additionally, the reliability of the IRP model is constrained by data quality, especially when using long-term rates like the 10-year Mexican T-bill rate, which proved inconsistent. In practice, IRP requires precise and stable interest rate data for accurate forecasting. These observations suggest that while IRP can be a powerful tool for short-term forecasting, its applicability diminishes with longer forecasting horizons or in times of economic uncertainty when other factors may play a more significant role.
+
+Overall, this graph demonstrates that the USD tends to strengthen against the MXN in line with short-term interest rate differentials. However, reliance solely on IRP may be risky for long-term predictions or in unstable market conditions, highlighting the importance of supplementing IRP analysis with additional economic factors.
+
+
+---
+
+## Prophet Forecasts
+
+---
+
+### 6. Prophet Forecasts: 7-Year Forecast from 2018
+
+![7-Year Forecast](images/USD_to_MXN_Prophet_Forecast_7_Year.png)
+
+**Purpose:** This 7-year Prophet forecast from 2018 provides insight into the model’s capability for long-term trend identification and seasonal pattern recognition.
+
+**Observations:** While the 7-year forecast captures broad seasonal trends, it struggles to accurately predict short-term spikes caused by economic events like the COVID-19 pandemic, where a significant deviation from the trend occurred. This limitation highlights Prophet’s difficulty in adapting to sudden economic shocks. Given its reliance on seasonal and trend-based data, the model performs better in stable environments and less so during high-volatility periods. For immediate needs, such as Carlito’s plan to exchange currency, Prophet may underestimate potential gains due to current favorable seasonal conditions. The findings suggest Carlito should capitalize on the current winter season rather than waiting, as short-term models may offer more actionable insights in volatile markets.
+
+---
+
+### 7. Best Case, Worst Case, and Most Likely Exchange Rate Scenarios
+
+![Best, Worst, Most Likely Scenarios](images/USD_to_MXN_Best_Worst_Most_Likely_Scenarios.png)
+
+**Purpose:** This visualization outlines three potential scenarios—best, worst, and most likely—for the exchange rate over the next 70 business days, providing Carlito with a range of possible outcomes.
+
+**Observations:** The 70-business-day forecast reflects the seasonal advantage of winter, where the USD typically appreciates against the MXN. The best-case scenario aligns with this seasonal trend, suggesting a favorable rate if Carlito exchanges his money now. In contrast, the worst-case scenario highlights the risk of waiting, where the rate could become less favorable as seasonal trends shift. Given these projections, Carlito is advised to exchange his currency sooner rather than later to take advantage of the favorable winter exchange rate.
+
+---
+
+### 8. Prophet Forecast Components
+
+![Prophet Forecast Components](images/USD_to_MXN_Prophet_Forecast_Components.png)
+
+**Purpose:** Prophet’s components plot breaks down the forecast into trend, weekly, and yearly seasonal effects. This helps us understand the factors that influence the forecasted exchange rate.
+
+**Observations:** The monthly seasonality component reveals that the winter season generally provides a stronger USD, as demand for pesos decreases. This trend supports Carlito’s plan to exchange his dollars during the winter months to get a higher return, as the MXN tends to be relatively weaker. Therefore, it’s recommended for Carlito to exchange his money now to capitalize on this seasonal advantage, rather than risking potential depreciation of the USD over the next 90 days.
+
+
+---
+
+### Conclusion and Recommendations
+
+Our analysis of the USD to MXN exchange rate, coupled with insights from historical data, seasonal trends, and economic indicators, leads us to a clear recommendation: Carlito should proceed with exchanging his USD to MXN now, rather than waiting. The data reveals several interconnected factors that make this timing optimal:
+
+1. **Seasonal Advantage in Winter**: The Prophet model's seasonal component analysis indicates that the USD typically strengthens against the MXN during winter months. This seasonal trend, driven by lower demand for pesos and other economic behaviors specific to this time of year, creates a more favorable exchange rate environment for converting USD to MXN. By acting now, Carlito stands to benefit from this seasonal strength, capturing a rate that may not be as favorable in a few months, particularly as we enter spring when demand for pesos might increase.
+
+2. **Limitations of Long-Term Forecasting in Volatile Markets**: While the Prophet model is useful for capturing broad trends and identifying regular seasonal patterns, it is less effective at predicting short-term fluctuations caused by sudden economic shocks. Events like the COVID-19 pandemic have demonstrated how quickly and dramatically exchange rates can deviate from projected trends due to unforeseen global crises. Our historical analysis shows that the USD to MXN exchange rate has experienced significant short-term spikes during global events, followed by corrections. Given these patterns, Carlito’s decision-making should prioritize timing that minimizes exposure to such volatility. Exchanging currency now, rather than relying on long-term predictions that may fail in volatile conditions, helps mitigate the risk of being caught in an economic shock.
+
+3. **Short-Term Predictive Value from Interest Rate Parity (IRP)**: Our Interest Rate Parity (IRP) analysis further supports the recommendation to act now. IRP shows a strong correlation between the exchange rate and short-term interest rate differentials, particularly over 90-day horizons. This relationship suggests that interest rate movements can offer predictive insights for immediate exchange rate behavior. However, our analysis also highlights the limitations of IRP when using longer-term interest rate data, such as the Mexican 10-year T-bill, which suffers from inconsistency and offers less predictive power. Since IRP is reliable only over shorter periods, it reinforces the importance of capitalizing on the current exchange rate rather than waiting for a speculative improvement in the next few months.
+
+4. **Historical Trend of USD Appreciation with Periodic Volatility**: Examining the 30-year trend, the USD has shown a steady appreciation against the MXN, with significant peaks during times of global economic stress, such as the 2008 financial crisis and the COVID-19 pandemic. These spikes highlight the USD’s role as a “safe haven” currency that investors turn to during periods of uncertainty, temporarily strengthening its value relative to the MXN. However, these spikes are typically followed by a market correction as conditions stabilize, bringing the exchange rate back in line with long-term trends. With no immediate signs of an impending crisis, the current environment may represent a window of stability, making it an ideal time for Carlito to exchange his currency without the risk of sudden devaluation due to external shocks. Waiting could expose him to the possibility of another volatility-driven spike, followed by a correction that may not be as favorable.
+
+5. **Best, Worst, and Most Likely Scenarios for the Coming 70 Days**: Our 70-business-day scenario analysis offers a realistic range of potential outcomes for the exchange rate, highlighting the advantages of acting now. The best-case scenario aligns with the current seasonal trend favoring a stronger USD, while the worst-case scenario suggests the possibility of a less favorable rate if Carlito waits, exposing him to downside risk. The “most likely” scenario is consistent with the seasonal advantage we’ve observed in winter, affirming the recommendation to exchange now to capture this advantage.
+
+6. **Monthly Seasonality Component Analysis**: By analyzing Prophet’s breakdown of seasonal patterns, we gain further support for the winter exchange. The seasonality component shows that winter months consistently offer a stronger USD due to lower demand for MXN, a pattern that has held over the years. Exchanging now would allow Carlito to leverage this cyclical trend and maximize the value of his USD in the near term. Waiting for spring could mean losing this seasonal advantage, as the peso typically strengthens with increased economic activity and higher demand as the year progresses.
+
+### Final Recommendation:
+
+In light of the above factors, we advise Carlito to exchange his USD for MXN now. By doing so, he can capitalize on the favorable seasonal conditions, mitigate the risks associated with unexpected economic shocks, and avoid the limitations inherent in long-term forecasting models like Prophet in volatile market environments. The combined insights from seasonal analysis, short-term IRP data, historical trends, and current market stability make this a strategic opportunity to achieve the best possible rate for his exchange.
+
+This recommendation leverages a data-driven approach to currency exchange, combining short- and long-term insights to ensure Carlito makes an informed, optimal decision. Acting now will allow him to lock in a favorable rate and avoid the potential downside associated with waiting, which could result in a less advantageous rate due to shifting seasonal trends, possible economic volatility, and the inherent limitations of predictive models in accounting for sudden market shifts.
+
 
 
 ## Future Opportunities
