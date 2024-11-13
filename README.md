@@ -32,12 +32,13 @@ This project addresses a practical challenge: deciding the optimal timing for cu
 
 To guide Carlito’s decision, we conducted a comprehensive analysis of the USD to MXN exchange rate, exploring historical trends, seasonal patterns, and key economic indicators. By leveraging advanced time series forecasting tools and economic data from the Federal Reserve (FRED), we provided him with data-driven insights on exchange rate trends, ultimately helping him make a well-informed choice.
 
-## Goals
+### Goals
+1. **Understand Historical Trends**: Examine the long-term trajectory of the USD to MXN exchange rate to provide a historical perspective.
+2. **Identify Seasonal Patterns**: Determine if the exchange rate has recurring seasonal shifts, potentially driven by factors like tourism and market demand.
+3. **Evaluate Economic Indicators**: Assess how factors such as GDP, inflation, and interest rates correlate with the exchange rate.
+4. **Forecast Future Rates**: Using Prophet and other modeling techniques, predict the exchange rate 90 days into the future to advise Carlito on the best exchange timing.
 
-1. **Understand Historical Trends**
-2. **Identify Seasonal Patterns**
-3. **Evaluate Economic Indicators**
-4. **Forecast Future Rates**
+Through this project, we demonstrate how analytical and predictive tools can be applied to a real-world scenario, empowering travelers and investors alike to make informed currency exchange decisions. This approach is repeatable, allowing Carlito to apply similar analysis to other currencies for future travel or investment plans.
 
 ---
 
