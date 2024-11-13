@@ -291,7 +291,7 @@ Overall, this graph demonstrates that the USD tends to strengthen against the MX
 
 ---
 
-## Prophet Forecasts (7-Year Forecast from 2018)
+### 6. Prophet Forecasts (7-Year Forecast from 2018)
 
 ---
 
