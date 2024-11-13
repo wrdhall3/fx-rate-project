@@ -73,6 +73,7 @@ The data is sourced from [FRED (Federal Reserve Economic Data)](https://fred.stl
 ### Run the Notebook
 Open and run the `retrieve_fx_data.ipynb` notebook, which contains all code for data retrieval, analysis, and visualization. Ensure that the environment is configured correctly with the required dependencies.
 
+
 ### Data Retrieval and Analysis
 - The notebook first retrieves the data from FRED using the API key.
 - The economic indicators are then combined into a single DataFrame, with dates aligned to ensure consistency across all time series.
@@ -98,17 +99,17 @@ To forecast the USD to MXN exchange rate and guide Carlito's decision, we employ
    - We then calculated a **linear regression line** to identify the trend direction and establish a baseline forecast for future rates.
    - We calculated a **three-year trailing average** with upper and lower bounds (confidence intervals) to highlight periods of unusual volatility, particularly during significant economic events.
 
-### 4. **Seasonal Analysis with Prophet**
-   - Using the **Prophet time series forecasting model**, we detected seasonal trends in the USD to MXN exchange rate, finding that the rate typically depreciates during summer and appreciates in winter, potentially due to tourism-driven currency demand.
-   - We generated a 90-day forecast with Prophet to predict the exchange rate three months into the future, aligning with Carlito’s travel plans.
+### 4. **Interest Rate Parity (IRP) Calculation**
+   - To test the **Interest Rate Parity (IRP) hypothesis**, we calculated a forward exchange rate using the interest rates of US and Mexican 90-day T-bills, then compared it to the actual rate shifted by 90 days.
+   - The high correlation between the IRP-predicted rate and the actual exchange rate (approximately 0.98) confirmed the relevance of IRP, albeit with some limitations due to data gaps.
 
 ### 5. **Correlation Analysis of Economic Indicators**
    - We conducted a correlation analysis to understand the influence of different economic indicators on the USD to MXN exchange rate. High correlations with GDP (around 0.90) and inflation indicated strong relationships, while moderate correlations with other indicators helped refine our understanding of the rate’s drivers.
    - We visualized these correlations using a heatmap to easily interpret the strength and direction of each factor’s relationship with the exchange rate.
 
-### 6. **Interest Rate Parity (IRP) Calculation**
-   - To test the **Interest Rate Parity (IRP) hypothesis**, we calculated a forward exchange rate using the interest rates of US and Mexican 90-day T-bills, then compared it to the actual rate shifted by 90 days.
-   - The high correlation between the IRP-predicted rate and the actual exchange rate (approximately 0.98) confirmed the relevance of IRP, albeit with some limitations due to data gaps.
+### 6.**Seasonal Analysis with Prophet**
+   - Using the **Prophet time series forecasting model**, we detected seasonal trends in the USD to MXN exchange rate, finding that the rate typically depreciates during summer and appreciates in winter, potentially due to tourism-driven currency demand.
+   - We generated a 90-day forecast with Prophet to predict the exchange rate three months into the future, aligning with Carlito’s travel plans. 
 
 ### 7. **Visualization and Final Analysis**
    - We created a series of visualizations to communicate findings effectively, including:
@@ -208,7 +209,6 @@ predicted_y = slope * x_90_days_later + intercept
 
 
 ## Visualizations
-[Back to Top](#table-of-contents)
 
 In our analysis of the USD to MXN exchange rate and its relationship with economic indicators, we’ve created a series of visualizations to help understand key patterns and trends. Each visualization plays an essential role in illustrating the insights derived from our data. Below, we outline each chart's purpose and highlight important observations.
 
@@ -329,6 +329,7 @@ Overall, this graph demonstrates that the USD tends to strengthen against the MX
 
 **Observations:** The monthly seasonality component reveals that the winter season generally provides a stronger USD, as demand for pesos decreases. This trend supports Carlito’s plan to exchange his dollars during the winter months to get a higher return, as the MXN tends to be relatively weaker. Therefore, it’s recommended for Carlito to exchange his money now to capitalize on this seasonal advantage, rather than risking potential depreciation of the USD over the next 90 days.
 
+[Back to Top](#table-of-contents)
 
 ---
 
