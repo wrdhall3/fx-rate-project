@@ -3,39 +3,36 @@
 This project is designed to analyze and predict the exchange rate between USD and MXN (Mexican Peso) using data from the Federal Reserve Economic Data (FRED) API. The project explores multiple economic indicators, performs a linear regression analysis to observe trends, and visualizes the results.
 
 ## Table of Contents
-1. [User Story](#user-story)
-2. [Project Overview](#project-overview)
-3. [Goals](#goals)
-4. [Data Sources](#data-sources)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Methodology](#methodology)
-8. [Hypotheses and Expected Findings](#hypotheses-and-expected-findings)
-9. [Experimental Approach and Key Observations](#experimental-approach-and-key-observations)
-10. [Statistical Summary and Predictive Model Setup](#statistical-summary-and-predictive-model-setup)
-11. [Visualizations](#visualizations)
-12. [Analysis-Driven Recommendations](#analysis-driven-recommendations)
-13. [Future Opportunities](#future-opportunities)
-14. [License](#license)
+- [User Story](#user-story)
+- [Project Overview](#project-overview)
+- [Goals](#goals)
+- [Data Sources](#data-sources)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Methodology](#methodology)
+- [Hypotheses and Expected Findings](#hypotheses-and-expected-findings)
+- [Experimental Approach and Key Observations](#experimental-approach-and-key-observations)
+- [Statistical Summary and Predictive Model Setup](#statistical-summary-and-predictive-model-setup)
+- [Visualizations](#visualizations)
+- [Analysis-Driven Recommendations](#analysis-driven-recommendations)
+- [Future Opportunities](#future-opportunities)
+- [License](#license)
 
 ---
 
 ## User Story
-[Back to Top](#table-of-contents)
 
 Meet **Carlito**, a world traveler planning an exciting trip to Mexico in two weeks. Carlito wants to make the most of his budget and is curious about the USD to MXN exchange rate and potential shifts in the near future.
 
 Our mission is to analyze historical exchange rate data, consider major economic events, and apply predictive models to forecast trends. With these insights, our team of seasoned analysts aims to help Carlito make informed decisions on when to exchange his money for the best possible rate.
 
 ## Project Overview
-[Back to Top](#table-of-contents)
 
 This project addresses a practical challenge: deciding the optimal timing for currency exchange before a trip. Carlito, a U.S. traveler planning a vacation to Mexico, wants to determine whether he should exchange his dollars for pesos now or wait until he arrives in Oaxaca in three months.
 
 To guide Carlito’s decision, we conducted a comprehensive analysis of the USD to MXN exchange rate, exploring historical trends, seasonal patterns, and key economic indicators. By leveraging advanced time series forecasting tools and economic data from the Federal Reserve (FRED), we provided him with data-driven insights on exchange rate trends, ultimately helping him make a well-informed choice.
 
 ## Goals
-[Back to Top](#table-of-contents)
 
 1. **Understand Historical Trends**
 2. **Identify Seasonal Patterns**
@@ -45,7 +42,6 @@ To guide Carlito’s decision, we conducted a comprehensive analysis of the USD 
 ---
 
 ## Data Sources
-[Back to Top](#table-of-contents)
 
 The data is sourced from [FRED (Federal Reserve Economic Data)](https://fred.stlouisfed.org/), a reliable government data source that provides economic data, including:
 
@@ -64,7 +60,6 @@ The data is sourced from [FRED (Federal Reserve Economic Data)](https://fred.stl
 ---
 
 ## Installation
-[Back to Top](#table-of-contents)
 
 1. **Clone the repository**
    ```bash
@@ -73,7 +68,6 @@ The data is sourced from [FRED (Federal Reserve Economic Data)](https://fred.stl
 
 
 ## Usage
-[Back to Top](#table-of-contents)
 
 ### Run the Notebook
 Open and run the `retrieve_fx_data.ipynb` notebook, which contains all code for data retrieval, analysis, and visualization. Ensure that the environment is configured correctly with the required dependencies.
@@ -87,7 +81,6 @@ Open and run the `retrieve_fx_data.ipynb` notebook, which contains all code for 
 - A linear regression model is fitted to the USD to MXN exchange rate to show trends and predict future values.
 
 ## Methodology
-[Back to Top](#table-of-contents)
 
 To forecast the USD to MXN exchange rate and guide Carlito's decision, we employed a systematic approach to analyze historical trends, seasonal patterns, and economic factors. Here’s a breakdown of our methodology:
 
@@ -129,7 +122,6 @@ By following this structured methodology, we equipped Carlito with a data-driven
 
 
 ## Hypotheses and Expected Findings
-[Back to Top](#table-of-contents)
 
 Our analysis investigates the primary economic drivers behind the USD to MXN exchange rate, focusing on potential correlations with GDP, inflation, seasonal trends, and interest rate differences. By rigorously testing each of these economic factors, we aim to provide actionable insights into optimal timing for currency exchange decisions.
 
@@ -148,7 +140,6 @@ This study aims to answer several core questions:
 ---
 
 ### Experimental Approach and Key Observations
-[Back to Top](#table-of-contents)
 
 Our methodology includes gathering historical exchange rate data along with relevant economic indicators from the Federal Reserve Economic Data (FRED) API, followed by rigorous analysis. Below are the key observations derived from our hypotheses:
 
@@ -199,7 +190,6 @@ Moving forward, we aim to refine these insights with more advanced modeling, exp
 
 
 ### Statistical Summary and Predictive Model Setup
-[Back to Top](#table-of-contents)
 
 To quantify the long-term trend, we applied a linear regression model with a **slope** of 0.00134 and an **intercept** of -973.3058, resulting in the equation:
 
@@ -307,7 +297,6 @@ Overall, this graph demonstrates that the USD tends to strengthen against the MX
 ---
 
 ## Prophet Forecasts
-[Back to Top](#table-of-contents)
 
 ---
 
@@ -367,7 +356,6 @@ This recommendation leverages a data-driven approach to currency exchange, combi
 
 
 ## Future Opportunities
-[Back to Top](#table-of-contents)
 
 As we look to scale and enhance our exchange rate prediction model, we see several promising opportunities for expansion, both in terms of model complexity and accessibility to a broader audience. Our future work will build on the current foundation by incorporating additional features, exploring new predictive models, and making the tool accessible to diverse users, from travelers to financial analysts. Below are the key areas we aim to explore:
 
