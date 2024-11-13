@@ -1,6 +1,7 @@
 # Foreign Exchange Rate Analysis and Prediction
 
 This project is designed to analyze and predict the exchange rate between USD and MXN (Mexican Peso) using data from the Federal Reserve Economic Data (FRED) API. The project explores multiple economic indicators, performs a linear regression analysis to observe trends, and visualizes the results.
+--
 
 ## Table of Contents
 - [User Story](#user-story)
@@ -26,11 +27,15 @@ Meet **Carlito**, a world traveler planning an exciting trip to Mexico in two we
 
 Our mission is to analyze historical exchange rate data, consider major economic events, and apply predictive models to forecast trends. With these insights, our team of seasoned analysts aims to help Carlito make informed decisions on when to exchange his money for the best possible rate.
 
+---
+
 ## Project Overview
 
 This project addresses a practical challenge: deciding the optimal timing for currency exchange before a trip. Carlito, a U.S. traveler planning a vacation to Mexico, wants to determine whether he should exchange his dollars for pesos now or wait until he arrives in Oaxaca in three months.
 
 To guide Carlito’s decision, we conducted a comprehensive analysis of the USD to MXN exchange rate, exploring historical trends, seasonal patterns, and key economic indicators. By leveraging advanced time series forecasting tools and economic data from the Federal Reserve (FRED), we provided him with data-driven insights on exchange rate trends, ultimately helping him make a well-informed choice.
+
+---
 
 ### Goals
 1. **Understand Historical Trends**: Examine the long-term trajectory of the USD to MXN exchange rate to provide a historical perspective.
@@ -95,6 +100,7 @@ from prophet import Prophet
 - Obtain a FRED API key from FRED.
 - Add your API key to the environment or configure it directly in the notebook for secure access to the data.
 
+--- 
 
 ## Usage
 
@@ -109,6 +115,8 @@ Open and run the `retrieve_fx_data.ipynb` notebook, which contains all code for 
 ### Plotting and Regression Analysis
 - The notebook provides visualization for each economic indicator over time.
 - A linear regression model is fitted to the USD to MXN exchange rate to show trends and predict future values.
+
+---
 
 ## Methodology
 
