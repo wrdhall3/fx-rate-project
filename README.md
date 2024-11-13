@@ -80,8 +80,8 @@ Ensure all required packages are installed. You can install them using:
 ```
 
 3. **Dependencies**
-```python
 Below is the core set of dependencies used in this project:
+```python
 import numpy as np
 import requests
 import time
