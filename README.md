@@ -122,6 +122,8 @@ To forecast the USD to MXN exchange rate and guide Carlito's decision, we employ
 
 By following this structured methodology, we equipped Carlito with a data-driven approach to make his currency exchange decision confidently, offering him a repeatable process for analyzing future travel-related currency exchanges.
 
+---
+
 ## Experimental Approach and Key Observations
 
 Our methodology involved gathering historical USD/MXN exchange rate data along with relevant economic indicators from the Federal Reserve Economic Data (FRED) API, followed by in-depth analysis to test key hypotheses. Below are the primary observations derived from each hypothesis:
@@ -163,6 +165,7 @@ Our methodology involved gathering historical USD/MXN exchange rate data along w
 - **Expected Finding**: Positive correlation between oil prices and MXN strength, reflected by a negative correlation with the USD/MXN rate.
 - **Observation**: Surprisingly, oil prices show only a weak negative correlation with the USD/MXN exchange rate. This suggests that while oil prices may affect the MXN, other factors like inflation and GDP growth have a more substantial role in exchange rate determination.
 
+---
 
 ## Visualizations
 
@@ -311,7 +314,7 @@ In light of the above factors, we advise Carlito to exchange his USD for MXN now
 
 This recommendation leverages a data-driven approach to currency exchange, combining short- and long-term insights to ensure Carlito makes an informed, optimal decision. Acting now will allow him to lock in a favorable rate and avoid the potential downside associated with waiting, which could result in a less advantageous rate due to shifting seasonal trends, possible economic volatility, and the inherent limitations of predictive models in accounting for sudden market shifts.
 
-
+---
 
 ## Future Opportunities
 
@@ -341,7 +344,7 @@ To maintain the model’s relevance and accuracy, we plan to implement an automa
 ### Summary
 In summary, our future developments include expanding the model to analyze additional currencies, providing real-time forecasts on demand, building a dedicated app, enhancing model complexity with multivariable regression, and automating updates for seamless, up-to-date insights. These advancements will make our product valuable and accessible to a broad audience—from travelers and investors to businesses and financial analysts. Ultimately, we envision a powerful, user-friendly tool that offers reliable exchange rate forecasts and actionable insights across diverse economic scenarios.
 
-
+---
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
