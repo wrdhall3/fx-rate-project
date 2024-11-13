@@ -67,6 +67,34 @@ The data is sourced from [FRED (Federal Reserve Economic Data)](https://fred.stl
    git clone https://github.com/wrdhall3/fx-rate-project.git
    cd fx-rate-project
 
+2. **Install Dependencies**
+Ensure all required packages are installed. You can install them using:
+
+```bash
+!pip install fredapi prophet
+```
+
+3. **Dependencies**
+```python
+Below is the core set of dependencies used in this project:
+import numpy as np
+import requests
+import time
+import os
+import pandas as pd
+import json
+from datetime import datetime
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+from scipy import stats
+import seaborn as sns
+from prophet import Prophet
+```
+
+4. **Set Up FRED API Key**
+- Obtain a FRED API key from FRED.
+- Add your API key to the environment or configure it directly in the notebook for secure access to the data.
+
 
 ## Usage
 
