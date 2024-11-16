@@ -23,7 +23,7 @@ This project is designed to analyze and predict the exchange rate between USD an
 
 ## User Story
 
-Meet **Carlito**, a world traveler planning an exciting trip to Mexico in two weeks. Carlito wants to make the most of his budget and is curious about the USD to MXN exchange rate and potential shifts in the near future.
+Meet **Carlito**, a world traveler planning an exciting trip to Mexico in 90 days. Carlito wants to make the most of his budget and is curious about the USD to MXN exchange rate and potential shifts in the near future.
 
 Our mission is to analyze historical exchange rate data, consider major economic events, and apply predictive models to forecast trends. With these insights, our team of seasoned analysts aims to help Carlito make informed decisions on when to exchange his money for the best possible rate.
 
@@ -38,12 +38,17 @@ To guide Carlito’s decision, we conducted a comprehensive analysis of the USD 
 ---
 
 ### Goals
-1. **Understand Historical Trends**: Examine the long-term trajectory of the USD to MXN exchange rate to provide a historical perspective.
-2. **Identify Seasonal Patterns**: Determine if the exchange rate has recurring seasonal shifts, potentially driven by factors like tourism and market demand.
-3. **Evaluate Economic Indicators**: Assess how factors such as GDP, inflation, and interest rates correlate with the exchange rate.
-4. **Forecast Future Rates**: Using Prophet and other modeling techniques, predict the exchange rate 90 days into the future to advise Carlito on the best exchange timing.
 
-Through this project, we demonstrate how analytical and predictive tools can be applied to a real-world scenario, empowering travelers and investors alike to make informed currency exchange decisions. This approach is repeatable, allowing Carlito to apply similar analysis to other currencies for future travel or investment plans.
+1. **Analyze Historical Trends**: Conduct a thorough examination of the long-term USD to MXN exchange rate to identify significant trends and shifts over time. This historical perspective will serve as a foundation for understanding how the exchange rate has evolved, providing valuable context for further analysis and forecasting.
+
+2. **Evaluate Economic Indicators through Correlation**: Investigate the relationship between the USD to MXN exchange rate and key economic indicators, such as GDP growth, inflation, and interest rates. By assessing correlations between these factors and the exchange rate, we aim to identify how broader economic conditions impact currency values and gain insights into the primary drivers of exchange rate fluctuations.
+
+3. **Test Whether Interest Rate Parity Holds True**: Apply the Interest Rate Parity (IRP) theory to evaluate its effectiveness in predicting the USD to MXN exchange rate. By comparing the IRP-predicted exchange rate with actual rates, we can test the model’s reliability, particularly over short-term periods, and determine if interest rate differentials are a significant factor in this currency pair's valuation.
+
+4. **Forecast Future Rates Using Prophet**: Utilize the Prophet forecasting model to predict the USD to MXN exchange rate over the next 90 days. By analyzing seasonal trends and applying a time series model, we aim to provide Carlito with actionable insights on the optimal timing for his currency exchange. This predictive approach will not only benefit Carlito but can also serve as a repeatable framework for other travelers and investors seeking data-driven decisions on currency exchange timing.
+
+Through this structured approach, we leverage historical data, economic analysis, and predictive modeling to empower individuals with insights that make currency exchange decisions more informed and strategic.
+
 
 ---
 
@@ -131,7 +136,7 @@ To forecast the USD to MXN exchange rate and guide Carlito's decision, we employ
    - **Normalization**: We ensured all datasets aligned with a common timeframe to allow meaningful comparisons, including transforming quarterly data where necessary.
 
 ### 3. **Exploratory Data Analysis (EDA)**
-   - We began by plotting a 30-year historical trend of the USD to MXN exchange rate to visualize the long-term appreciation of the USD against the MXN. 
+   - We began by plotting a 30-year historical trend of the USD to MXN exchange rate to visualize the long-term appreciation of the USD against the MXN.
    - We then calculated a **linear regression line** to identify the trend direction and establish a baseline forecast for future rates.
    - We calculated a **three-year trailing average** with upper and lower bounds (confidence intervals) to highlight periods of unusual volatility, particularly during significant economic events.
 
@@ -143,20 +148,21 @@ To forecast the USD to MXN exchange rate and guide Carlito's decision, we employ
    - We conducted a correlation analysis to understand the influence of different economic indicators on the USD to MXN exchange rate. High correlations with GDP (around 0.90) and inflation indicated strong relationships, while moderate correlations with other indicators helped refine our understanding of the rate’s drivers.
    - We visualized these correlations using a heatmap to easily interpret the strength and direction of each factor’s relationship with the exchange rate.
 
-### 6.**Seasonal Analysis with Prophet**
+### 6. **Seasonal Analysis with Prophet**
    - Using the **Prophet time series forecasting model**, we detected seasonal trends in the USD to MXN exchange rate, finding that the rate typically depreciates during summer and appreciates in winter, potentially due to tourism-driven currency demand.
-   - We generated a 90-day forecast with Prophet to predict the exchange rate three months into the future, aligning with Carlito’s travel plans. 
+   - We generated a 90-day forecast with Prophet to predict the exchange rate three months into the future, aligning with Carlito’s travel plans.
 
-### 7. **Visualization and Final Analysis**
+### 7. **Visualization and Analysis of Findings**
    - We created a series of visualizations to communicate findings effectively, including:
      - A historical exchange rate chart with a regression line for long-term trends.
      - A confidence interval chart to show periods of volatility and economic shocks.
      - Seasonal trends identified by Prophet.
      - A correlation heatmap for economic indicators.
      - A 90-day forecast for Carlito’s trip decision.
-   - These visualizations guided Carlito’s final decision, providing both historical perspective and predictive insights.
+   - These visualizations aim to support Carlito’s decision by providing both historical perspective and predictive insights.
 
-By following this structured methodology, we equipped Carlito with a data-driven approach to make his currency exchange decision confidently, offering him a repeatable process for analyzing future travel-related currency exchanges.
+By following this structured methodology, we aim to equip Carlito with a data-driven approach to make his currency exchange decision confidently, offering a repeatable process for analyzing future travel-related currency exchanges.
+
 
 ---
 
