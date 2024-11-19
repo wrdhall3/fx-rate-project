@@ -273,6 +273,9 @@ The correlation matrix provides a comprehensive view of the relationships betwee
    - The **US Federal Funds Rate** (-0.27) and **US 90-Day T-bill Rate** (-0.21) exhibit moderate negative correlations with the exchange rate. This suggests that higher US interest rates are associated with a slightly lower USD to MXN exchange rate, possibly because higher US interest rates can attract foreign investment, strengthening the USD relative to the MXN.
    - **Mexico’s 90-Day T-bill Rate** has a very weak correlation with the exchange rate (0.04), indicating that short-term interest rates in Mexico have minimal direct impact on the USD to MXN exchange rate. This weak relationship could be due to other dominant factors, such as Mexico’s economic performance relative to the US or global investor sentiment favoring the USD as a safe haven.
 
+   For more details, you can check the [USD to MXN 90-Day Treasury Bill Rates](images/USD_to_MXN_90-Day_Treasury_Bill_Rates_US.png).
+
+
 3. **Unemployment Rates and Exchange Rate:**
    - Both **US Unemployment** (-0.46) and **Mexico Unemployment** (-0.46) have moderate negative correlations with the exchange rate. This suggests that higher unemployment rates in either country are generally associated with a stronger USD relative to the MXN. High unemployment can indicate economic weakness, which might reduce the attractiveness of that country's currency, favoring the USD as a more stable option.
 
@@ -302,6 +305,8 @@ However, while the IRP model works well for short-term predictions, certain limi
 Additionally, the reliability of the IRP model is constrained by data quality, especially when using long-term rates like the 10-year Mexican T-bill rate, which proved inconsistent. In practice, IRP requires precise and stable interest rate data for accurate forecasting. These observations suggest that while IRP can be a powerful tool for short-term forecasting, its applicability diminishes with longer forecasting horizons or in times of economic uncertainty when other factors may play a more significant role.
 
 Overall, this graph demonstrates that the USD tends to strengthen against the MXN in line with short-term interest rate differentials. However, reliance solely on IRP may be risky for long-term predictions or in unstable market conditions, highlighting the importance of supplementing IRP analysis with additional economic factors.
+
+images/USD_to_MXN_90-Day_Treasury_Bill_Rates_US.png
 
 ---
 
