@@ -306,8 +306,6 @@ Additionally, the reliability of the IRP model is constrained by data quality, e
 
 Overall, this graph demonstrates that the USD tends to strengthen against the MXN in line with short-term interest rate differentials. However, reliance solely on IRP may be risky for long-term predictions or in unstable market conditions, highlighting the importance of supplementing IRP analysis with additional economic factors.
 
-images/USD_to_MXN_90-Day_Treasury_Bill_Rates_US.png
-
 ---
 
 ### 6. Prophet Forecasts (7-Year Forecast from 2018)
