@@ -1,4 +1,12 @@
-# Foreign Exchange Rate Analysis and Prediction
+<div align="center">
+
+<h1 style="font-size: 3em;">Buy Pesos Now or Later?</h1>  
+<h2 style="font-size: 2em;">Analyzing USD-MXN Exchange Rates</h2>
+
+<img src="images/peso_usd2.png" alt="USD to MXN Analysis" style="width:100%; height:500px; object-fit:cover;">
+
+</div>
+
 
 This project is designed to analyze and predict the exchange rate between USD and MXN (Mexican Peso) using data from the Federal Reserve Economic Data (FRED) API. The project explores multiple economic indicators, performs a linear regression analysis to observe trends, and visualizes the results.
 --
